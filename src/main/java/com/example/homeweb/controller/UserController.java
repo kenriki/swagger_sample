@@ -23,7 +23,7 @@ import io.swagger.annotations.ApiOperation;
 @RestController
 public class UserController {
 
-	@ApiOperation(value = "ユーザー取得", nickname = "getItem")
+    @ApiOperation(value = "ユーザー取得", nickname = "getItem")
     @GetMapping(path = "user/{id}")
     public UserList getUser(@PathVariable String id) {
         return new UserList(id, "ichiro");
