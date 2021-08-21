@@ -3,12 +3,17 @@
 
 ## 必要なファイル
 
-1. `Swagger2Config`.java
+1. `SwaggerConfig`.java
 2. `UserController`.java
 3. `UserList`.java
 
 ## 実行結果
+
+> Swagger2
 <img src="./img/swagger2.png" alt="swagger2" title="swagger画面">
+
+> OpenAPI3にバージョンアップ
+<img src="./img/swagger3.png" alt="swagger3" title="swagger画面">
 
 # 参考
 [Spring Boot + SpringFoxでSwaggerを利用してソースからAPIキュメントを生成する](https://qiita.com/NagaokaKenichi/items/b6d4d55a202e6a93d047)
