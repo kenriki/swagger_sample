@@ -22,4 +22,5 @@
 
 [https://springdoc.org/](https://springdoc.org/)
 
+[https://www.vincenzoracca.com/en/blog/framework/spring/openapi/](https://www.vincenzoracca.com/en/blog/framework/spring/openapi/)
 
