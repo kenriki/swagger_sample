@@ -9,10 +9,12 @@
 
 ## 実行結果
 
-> Swagger2
+> ■Swagger2
 <img src="./img/swagger2.png" alt="swagger2" title="swagger画面">
 
-> OpenAPI3にバージョンアップ
+[swagger2とopenapi3との差分内容]
+(https://github.com/kenriki/swagger_sample/commit/9f614a3269f72718c30d9d9c32c77e2e0f6fd9ee#diff-b20a26de594adab7d1b61c915e4dc2bb2072fae913a3f61b6fe4b14d6aee47b2)
+> ■OpenAPI3にバージョンアップ
 <img src="./img/swagger3.png" alt="swagger3" title="swagger画面">
 
 # 参考
