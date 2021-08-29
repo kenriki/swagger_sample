@@ -1,13 +1,19 @@
 
 # APIドキュメント作成について
 
-## 必要なファイル
+## springdoc を使用したAPIドキュメントについて（以下URL）
+
+[https://github.com/springdoc/springdoc-openapi](https://github.com/springdoc/springdoc-openapi)
+
+## springfoxを使用したAPIドキュメント作成について（以下説明）
+
+### 必要なファイル
 
 1. `SwaggerConfig`.java
 2. `UserController`.java
 3. `UserList`.java
 
-## 実行結果
+### 実行結果
 
 > ■Swagger2
 <img src="./img/swagger2.png" alt="swagger2" title="swagger画面">
@@ -24,4 +30,6 @@
 [https://springdoc.org/](https://springdoc.org/)
 
 [https://www.vincenzoracca.com/en/blog/framework/spring/openapi/](https://www.vincenzoracca.com/en/blog/framework/spring/openapi/)
+
+-------
 
