@@ -1,17 +1,19 @@
-package com.example.homeweb.controller;
+package com.example.homeweb.controller.app.impl;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.homeweb.controller.app.IndexController;
+
 @Controller // (1)
 @RequestMapping("/top")
-public class IndexController {
+public class IndexControllerImpl implements IndexController{
 
 	/**
 	* Thymeleaf 基本編
 	*
-	* @param mav	
+	* @param mav
 	* ModelAndViewクラス テンプレートで利用するデータ類とビューに関する情報をまとめて管理するクラス
 	* @return
 	*/
