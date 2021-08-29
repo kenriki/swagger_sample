@@ -14,6 +14,11 @@ import springfox.documentation.service.Contact;
 import springfox.documentation.service.VendorExtension;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger.web.DocExpansion;
+import springfox.documentation.swagger.web.ModelRendering;
+import springfox.documentation.swagger.web.OperationsSorter;
+import springfox.documentation.swagger.web.UiConfiguration;
+import springfox.documentation.swagger.web.UiConfigurationBuilder;
 
 @Configuration
 @EnableOpenApi
@@ -53,5 +58,18 @@ public class SwaggerConfig {
                 , "http://XXXXXXXXXXXX.co.jp"   // APIのライセンスURL
                 , new ArrayList<VendorExtension>()  // 独自に拡張したいドキュメントがあればここで作成
         );
+    }
+
+    @Bean
+    public UiConfiguration swaggerUiConf() {
+        return UiConfigurationBuilder.builder()
+                .displayRequestDuration(true)
+                .defaultModelExpandDepth(-1)
+                .defaultModelRendering(ModelRendering.EXAMPLE)
+                .filter(true)
+                .operationsSorter(OperationsSorter.ALPHA)
+                .validatorUrl("")
+                .docExpansion(DocExpansion.LIST)
+                .build();
     }
 }
