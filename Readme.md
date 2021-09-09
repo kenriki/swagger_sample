@@ -5,6 +5,11 @@
 
 [https://github.com/springdoc/springdoc-openapi](https://github.com/springdoc/springdoc-openapi)
 
+## springfoxからspringdocのOAS3へ移行 (develop1環境)
+[https://github.com/kenriki/swagger_sample/issues/2](https://github.com/kenriki/swagger_sample/issues/2)
+
+> 必要な情報を記載と画面動作
+
 ## springfoxを使用したAPIドキュメント作成について（以下説明）
 
 ### 必要なファイル
