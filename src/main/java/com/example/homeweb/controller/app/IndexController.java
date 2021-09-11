@@ -10,10 +10,18 @@ import org.springframework.web.servlet.ModelAndView;
  */
 public interface IndexController {
   /**
-   * 初期表示.
+   * TOPページ初期表示.
    *
    * @param mav ModelAndView
    * @return model ModelAndView
    */
-  public ModelAndView index(ModelAndView mav);
+  public ModelAndView topInit(ModelAndView mav);
+
+  /**
+   * SUBページ初期表示.
+   *
+   * @param mav ModelAndView
+   * @return model ModelAndView
+   */
+  public ModelAndView subInit(ModelAndView mav);
 }

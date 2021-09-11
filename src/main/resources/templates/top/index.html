@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
-<title>Thymeleaf 基本編</title>
-<link th:href="@{/css/style.css}" rel="stylesheet">
-<script th:src="@{/js/top.js}"></script>
-</head>
-<body>
-    <h1>Thymeleaf 基本編</h1>
-    <h2>1.記述方法</h2>
-    <h3>(1)変数式（${...}）</h3>
-    <p th:text="${msg}"></p>
-    <div id="id-result"></div>
-</body>
+<header th:fragment="header1">
+    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#basiceModal">
+        Launch demo modal
+    </button>
+
+    <div class="modal" id="basiceModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</header>
+<footer th:fragment="footer1">
+    <p style="background: yellow">フッターです</p>
+</footer>
+
 </html>
