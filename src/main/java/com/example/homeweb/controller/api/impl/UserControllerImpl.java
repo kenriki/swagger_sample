@@ -22,35 +22,35 @@ import com.example.homeweb.model.UserList;
 @RestController
 public class UserControllerImpl implements UserController{
 
-    @GetMapping(path = "user/{id}")
-    public UserList getUser(@PathVariable String id) {
-        return new UserList(id, "ichiro");
-    }
+  @GetMapping(path = "user/{id}")
+  public UserList getUser(@PathVariable String id) {
+    return new UserList(id, "ichiro");
+  }
 
-    @GetMapping(path = "users")
-    public List<UserList> getUsers() {
-        return new ArrayList<UserList>() {
-            {
-                add(new UserList("001", "ichiro"));
-                add(new UserList("002", "jiro"));
-                add(new UserList("003", "saburo"));
-            }
-        };
-    }
+  @GetMapping(path = "users")
+  public List<UserList> getUsers() {
+    return new ArrayList<UserList>() {
+      {
+        add(new UserList("001", "ichiro"));
+        add(new UserList("002", "jiro"));
+        add(new UserList("003", "saburo"));
+      }
+    };
+  }
 
-    @PostMapping(path = "user")
-    @ResponseStatus(HttpStatus.CREATED)
-    public void createUser(final @Validated @RequestBody UserList user, final BindingResult bindingResult) {
-    }
+  @PostMapping(path = "user")
+  @ResponseStatus(HttpStatus.CREATED)
+  public void createUser(final @Validated @RequestBody UserList user, final BindingResult bindingResult) {
+  }
 
-    @PutMapping(path = "user/{id}")
-    @ResponseStatus(HttpStatus.CREATED)
-    public void updateUser(@PathVariable String id, @Validated @RequestBody UserList user,
-            final BindingResult bindingResult) {
-    }
+  @PutMapping(path = "user/{id}")
+  @ResponseStatus(HttpStatus.CREATED)
+  public void updateUser(@PathVariable String id, @Validated @RequestBody UserList user,
+      final BindingResult bindingResult) {
+  }
 
-    @DeleteMapping(path = "user/{id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteUser(@PathVariable String id) {
-    }
+  @DeleteMapping(path = "user/{id}")
+  @ResponseStatus(HttpStatus.NO_CONTENT)
+  public void deleteUser(@PathVariable String id) {
+  }
 }
