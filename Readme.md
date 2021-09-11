@@ -33,3 +33,6 @@
 
 -------
 
+# Swagger Spec ファイルを Postman に読み込ませて、効率よく API開発
+[https://kaki-engine.com/postman-swagger/](https://kaki-engine.com/postman-swagger/)
+
