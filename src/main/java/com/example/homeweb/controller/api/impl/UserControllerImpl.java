@@ -1,5 +1,8 @@
 package com.example.homeweb.controller.api.impl;
 
+import com.example.homeweb.controller.api.UserController;
+import com.example.homeweb.model.UserList;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,12 +18,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.homeweb.controller.api.UserController;
-import com.example.homeweb.model.UserList;
-
-
 @RestController
-public class UserControllerImpl implements UserController{
+public class UserControllerImpl implements UserController {
 
   @GetMapping(path = "user/{id}")
   public UserList getUser(@PathVariable String id) {
